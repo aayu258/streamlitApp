@@ -1,8 +1,6 @@
 #project -CRUD operations
-"""
-try
-except
-"""
+
+
 from pathlib import Path
 import os  #operating system
 def readfileandfolder():
@@ -140,6 +138,10 @@ def delete_folder():
 
 
 
+
+
+
+
 def create_file_in_folder():
     readfileandfolder
     folder_name = input('Enter name of your folder:')
@@ -148,28 +150,9 @@ def create_file_in_folder():
     if p.exists():
         print('FILE ALREADY EXISTS!')
     else:
+        pass
 
-        readfileandfolder()
-        folder_name = input('Enter name of your folder:')
-        p = Path(folder_name)
-        if p.exists():
-            print('FOLDER ALREADY EXISTS!')
-        else:
-            p.mkdir()  #mkdir = Make a new folder.
-            print('FOLDER CREATED!')
-        try:
-            #d:\file handling(project 1 )cc\main.py"
-            file_name = input('Enter name on your file: ')
-            p = Path (folder_name)
-            if p.exists():
-                print('FILE ALREADY EXISTS')
-            else:
-                with open(file_name,'w') as file:
-                    content = input('Enter your file content: ')
-                    file.write(content)
-                    print('FILE ADDED!')
-        except Exception as e:
-            print(e)
+
 
 
 
